@@ -13,8 +13,8 @@
 #define NUMBER 1
 #define SYMBOL 2
 #define FUNCTN 3
-#define          NUMPAD 4
-#define          CONFIG 5
+#define NUMPAD 4
+#define CONFIG 5
 
 / {
         keymap {
