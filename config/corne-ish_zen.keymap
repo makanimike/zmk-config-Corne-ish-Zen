@@ -16,6 +16,11 @@
 #define         NUMPAD 4
 #define         CONFIG 5
 
+&mt {
+    tapping-term-ms = <400>;
+    flavor = "tap-preferred";
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
