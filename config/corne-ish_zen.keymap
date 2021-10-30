@@ -82,7 +82,7 @@
    &kp F1   &kp F2  &kp F3   &kp F4   &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10  &kp F11 &kp F12
    &none    &none   &none    &none    &none  &none     &none    &none    &none  &none    &none   &none
    &none    &none   &none    &none    &none  &none     &none    &none    &none  &none    &none   &none
-                           &none &tog QWERTY   &kp RET    &kp SPACE &tog QWERTY &none
+                           &none &tog FUNCTN   &kp RET    &kp SPACE &tog FUNCTN &none
                         >;
                 };
 
@@ -92,12 +92,12 @@
 // |      |     |     |     |     |     |   |     |  7   |  8  |  9  |  -  | BKSP |
 // |      |     |     |     |     |     |   |  *  |  4   |  5  |  6  |  +  |      |
 // |      |     |     |     |     |     |   |  /  |  1   |  2  |  3  |     |  =   |
-//                    |     | LWR | ENT |   | SPC | RSE  | , |
+//                    |     | QWERTY | ENT |   | SPC |   | , |
                         bindings = < 
    &none &none &none &none &none &none    &none           &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
    &none &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
    &none &none &none &none &none &none    &kp KP_SLASH    &kp KP_N1 &kp KP_N2 &kp KP_N3 &none &kp KP_EQUAL
-               &none &tog QWERTY &kp RET    &kp SPACE &tog QWERTY &kp KP_COMMA
+               &none &tog NUMPAD &kp RET    &kp SPACE &none &kp KP_COMMA
                         >;
                 };
 
@@ -107,7 +107,7 @@
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     | LWR |     |   |     | RSE |     |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none 
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
