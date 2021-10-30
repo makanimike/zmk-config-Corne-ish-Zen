@@ -26,9 +26,9 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | WIN | LWR | SPC |   | ENT | RSE  | ALT |
+//                    | WIN | LWR | ENT |   | SPC | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &mt LBKT U &kp I    &kp O   &kp P    &kp BKSP
    &kp LSHFT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp SEMI &kp SQT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp COMMA &kp DOT &kp FSLH &mt RSHIFT ESC
               &kp LWIN &tog NUMBER &kp RET    &kp SPACE &tog CONFIG &kp RALT
@@ -41,7 +41,7 @@
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | SHFT |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |  DEL |
 // | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     | LWR | SPC |   | ENT | RSE |     |  
+//                    |     | LWR | ENT |   | SPC | RSE |     |  
                         bindings = <
    &kp ESC   &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BKSP
    &kp LSHFT &none  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &kp DEL
@@ -57,7 +57,7 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | SHFT |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  :  |  "   |
 // | CTRL |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    |     | LWR | SPC |   | ENT | RSE |     |
+//                    |     | LWR | ENT |   | SPC | RSE |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_ASTERISK &kp LPAR &kp RPAR &kp BSPC
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp COLON &kp DQT
@@ -72,7 +72,7 @@
 // |  F1  | F2  | F3  | F4  | F5  |   |  F6 |  F7 | F8  | F9  | F10 | F11 | F12 |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     | LWR | SPC |   | ENT | RSE |     |
+//                    |     | LWR | ENT |   | SPC | RSE |     |
                         bindings = <
    &kp F1   &kp F2  &kp F3   &kp F4   &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10  &kp F11 &kp F12
    &none    &none   &none    &none    &none  &none     &none    &none    &none  &none    &none   &none
@@ -87,7 +87,7 @@
 // |      |     |     |     |     |     |   |     |  7   |  8  |  9  |  -  | BKSP |
 // |      |     |     |     |     |     |   |  *  |  4   |  5  |  6  |  +  |      |
 // |      |     |     |     |     |     |   |  /  |  1   |  2  |  3  |     |  =   |
-//                    |     | CNFG| SPC |   | ENT | QRTY | , |
+//                    |     | LWR | ENT |   | SPC | RSE  | , |
                         bindings = < 
    &none &none &none &none &none &none    &none           &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
    &none &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
@@ -102,7 +102,7 @@
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     | QRTY|     |   |     | QRTY|     |
+//                    |     | LWR |     |   |     | RSE |     |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none 
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
