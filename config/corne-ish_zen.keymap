@@ -29,8 +29,8 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // | ESC or TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  or SHIFT |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | CTRL  |
+// | SHFT       |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  or SHIFT |
+// | CTRL       |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | CTRL  |
 //                    | WIN | NUMBER | ENT |   | SPC | SYMBOL  | ALT |
                         bindings = <
    &mt TAB ESC &kp Q &kp W &kp E &kp R &kp T    &kp Y &mt LBKT U &kp I      &kp O    &kp P    &kp BKSP
@@ -43,14 +43,14 @@
                 number_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | SHFT |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |  DEL |
-// | CTRL |     |     |     |     |     |   |HOME |     |     | END |     |      |
-//                    |     | LWR |     |   | SPC | FUNCTN |     |  
+// |  ESC or TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |     CAPS    |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |  DEL |
+// |     CTRL    |     |     |     |     |     |   |HOME |     |     | END |     |      |
+//                    |     | LWR |  ENT  |   | SPC | FUNCTN |     |  
                         bindings = <
-   &kp ESC   &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BKSP
-   &kp LSHFT &none  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &kp DEL
-   &kp LCTRL &none  &none  &kp BSLH  &kp LBKT  &kp RBKT     &kp HOME &none    &none  &kp END   &none    &none 
+   &TRANS  &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BKSP
+   &kp CAPS &none  &none  &kp PSCRN &kp MINUS &kp EQUAL   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none    &kp DEL
+   &trans &none  &none  &kp BSLH  &kp LBKT  &kp RBKT      &kp HOME &none    &none  &kp END   &none    &none 
                           &none &mo NUMBER &kp RET   &kp SPACE &tog FUNCTN &none
                         >;
                 };
