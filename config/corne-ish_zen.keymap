@@ -50,7 +50,7 @@
                         bindings = <
    &trans     &kp N1    &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp BKSP
    &kp LSHFT  &kp CAPS  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &none    &kp DEL
-   &trans     &none     &none  &kp BSLH  &kp LBKT  &kp RBKT     &kp HOME &none    &none  &kp END   &none    &none 
+   &trans     &none     &none  &kp BSLH  &kp LBKT  &kp RBKT     &kp HOME &none    &trans &kp END   &none    &none 
                           &none &mo NUMBER &kp RET   &kp SPACE &tog FUNCTN &none
                         >;
                 };
